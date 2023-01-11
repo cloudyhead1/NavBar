@@ -1,0 +1,45 @@
+body {
+    background-color:cornflowerblue;
+    color:aquamarine;
+}
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    z-index: 10;
+}
+nav li {
+    position: relative;
+    list-style: none;
+    background-color: aqua;
+    color: cornflowerblue;
+    margin: 0;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    display: flex;
+}
+nav a, nav a:visited {
+    text-decoration: none;
+    width: 100%;
+    padding: 8px 0px;
+    color: cornflowerblue;
+}
+nav a:hover {
+    color: aquamarine;
+    background-color: lightblue;
+}
+.dropdown-content {
+    position: absolute;
+    top:37px;
+    width:100%;
+    display:none;
+    z-index: 20;
+}
+.dropdown-content ul {
+    flex-direction: column;
+}
+nav li:hover .dropdown-content {
+    display: block;
+}
